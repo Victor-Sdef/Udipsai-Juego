@@ -6,17 +6,7 @@ Este proyecto es un sistema de juegos interactivos desarrollado con una arquitec
 
 ## 📁 Estructura del Proyecto
 
-udipsai-juego/
-             │
-             ├── css/
-             │   └── styles.css.                ├── js/
-             │   └── main.js
-             ├── json/
-             │   └── juegos.json.               ├── vista/ 
-             │   └── juego1.html  
-             │                                   └ index.html 
-             └  README.md
-
+udipsai-juego/ │ ├── css/ │   └── styles.css ├── js/ │   └── main.js ├── json/ │   └── juegos.json ├── vista/ │   ├── juego1.html │   ├── index.html │   └── resultados.html └── README.md
 
 ---
 
@@ -58,78 +48,126 @@ Contiene la base de datos de los juegos en formato `.json`. Este archivo define:
   }
 ]
 
+
 ---
 
-### 🧠 Controlador (`js/main.js`)
+🧠 Controlador (js/main.js)
 
 Encargado de:
 
-- Cargar dinámicamente los datos de `juegos.json`
-- Filtrar juegos según lo escrito en el input del buscador
-- Mostrar los resultados en tiempo real
-- Guardar el juego seleccionado en `localStorage`
-- Redirigir a la vista del juego
-- Evaluar respuestas del usuario
+Cargar dinámicamente los datos de juegos.json
+
+Filtrar juegos según lo escrito en el input del buscador
+
+Mostrar los resultados en tiempo real
+
+Guardar el juego seleccionado en localStorage
+
+Redirigir a la vista del juego
+
+Evaluar respuestas del usuario
+
+
 
 ---
 
-### 🖼️ Vista (`vista/`)
+🖼️ Vista (vista/)
 
 Contiene las páginas visibles por el usuario:
 
-- **`index.html`**: buscador de juegos.
-- **`juego1.html`**: ejecución del juego seleccionado.
-- **`resultados.html`**: muestra mensaje final o puntaje.
+index.html: buscador de juegos.
+
+juego1.html: ejecución del juego seleccionado.
+
+resultados.html: muestra mensaje final o puntaje.
+
+
 
 ---
 
-### 🎨 Estilo (`css/styles.css`)
+🎨 Estilo (css/styles.css)
 
 Define los estilos visuales para:
 
-- El buscador
-- Los botones de opciones
-- Los contenedores de preguntas y resultados
-- Diseño responsive para dispositivos móviles
+El buscador
+
+Los botones de opciones
+
+Los contenedores de preguntas y resultados
+
+Diseño responsive para dispositivos móviles
+
+
 
 ---
 
-### ⚙️ Funcionamiento General
+⚙️ Funcionamiento General
 
-1. El usuario accede a `index.html`.
+1. El usuario accede a index.html.
+
+
 2. Escribe una palabra clave (ej. "memoria").
-3. El sistema busca coincidencias en `juegos.json`.
-4. Al hacer clic en un resultado, abre `juego1.html`.
+
+
+3. El sistema busca coincidencias en juegos.json.
+
+
+4. Al hacer clic en un resultado, abre juego1.html.
+
+
 5. Se muestran preguntas interactivas.
+
+
 6. El sistema evalúa las respuestas.
-7. Al finalizar, redirige a `resultados.html`.
+
+
+7. Al finalizar, redirige a resultados.html.
+
+
+
 
 ---
 
-### ✅ Requisitos Técnicos
+✅ Requisitos Técnicos
 
-- Navegador moderno (Chrome, Firefox, Edge)
-- Si se carga localmente, usar un servidor como:
-  - Live Server (VSCode)
-  - Python `http.server`
-  - XAMPP o similar
+Navegador moderno (Chrome, Firefox, Edge)
 
----
+Si se carga localmente, usar un servidor como:
 
-### 🚀 Futuras Mejoras
+Live Server (VSCode)
 
-- Agregar puntuación por usuario
-- Registro de progreso
-- Niveles y dificultad dinámica
-- Retroalimentación personalizada
-- Animaciones y sonidos interactivos
-- Versión móvil (PWA)
+Python http.server
+
+XAMPP o similar
+
+
+
 
 ---
 
-### 👥 Créditos
+🚀 Futuras Mejoras
 
-**Unidad de Desarrollo e Investigación en Psicología Aplicada e Inclusiva (UDIPSAI)**  
+Agregar puntuación por usuario
+
+Registro de progreso
+
+Niveles y dificultad dinámica
+
+Retroalimentación personalizada
+
+Animaciones y sonidos interactivos
+
+Versión móvil (PWA)
+
+
+
+---
+
+👥 Créditos
+
+Unidad de Desarrollo e Investigación en Psicología Aplicada e Inclusiva (UDIPSAI)
 📍 Universidad Católica de Cuenca
-              
-  
+
+✅ Este bloque lo puedes **copiar y pegar directamente** en tu archivo `README.md`.  
+Si necesitas que también incluya ejemplos de código (`main.js`, `index.html`, etc.) en el mismo README, puedo agregarlos.
+
